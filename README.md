@@ -31,6 +31,40 @@ The basic requirements for building the executable are:
 git clone https://github.com/Yorsyboy/Todo-list.git
 ```
 
+To get a local copy up and running follow these simple example steps.
+
+## Getting packages and debugging with Webhint
+```
+npm init -y
+
+npm install --save-dev hint@6.x
+```
+##### For validation detection using Webhint Run
+```
+npx hint .
+```
+##### from parent source directory
+
+## Getting packages and debugging with Stylelint
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+##### For validation detection using Stylelint Run
+```
+npx stylelint "**/*.{css,scss}"
+```
+##### from parent source directory
+
+## Getting packages and debugging with Eslint
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
+##### For validation detection using Eslint Run
+```
+npx eslint .
+```
+##### from parent source directory
+
 ## Author 1
 
 👤 **Toyosi Taiwo**
