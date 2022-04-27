@@ -31,6 +31,7 @@ const clearInput = () => {
   document.getElementById('todoListInput').value = '';
 };
 
+// interactivity begins here
 const toggleCheckbox = (id) => {
   const todoListArr = getDataFromLocalStorage();
   const checkboxElement = document.getElementById(id).checked;
