@@ -18,7 +18,7 @@ const clearLocalStorage = () => {
     let counter = todoListArr.length;
     while (counter > 0) {
       if (todoListArr[counter - 1].completed) {
-        todoListArr.splice(counter - 1, 1);
+        todoListArr.filter(counter - 1, 1);
       }
       counter -= 1;
     }
@@ -31,6 +31,7 @@ const clearInput = () => {
   document.getElementById('todoListInput').value = '';
 };
 
+// interactivity begins here
 const toggleCheckbox = (id) => {
   const todoListArr = getDataFromLocalStorage();
   const checkboxElement = document.getElementById(id).checked;
