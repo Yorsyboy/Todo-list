@@ -62,6 +62,17 @@ hr {
   width: 30px;
 }
 
+.action {
+  display: flex;
+  gap: 0 10px;
+}
+
+.action > button {
+  background-color: #6969691c !important;
+  padding: 7px 1px;
+  border-radius: 100%;
+}
+
 #todo-list {
   list-style: none;
 }
