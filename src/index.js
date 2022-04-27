@@ -18,7 +18,7 @@ const clearLocalStorage = () => {
     let counter = todoListArr.length;
     while (counter > 0) {
       if (todoListArr[counter - 1].completed) {
-        todoListArr.splice(counter - 1, 1);
+        todoListArr.filter(counter - 1, 1);
       }
       counter -= 1;
     }
